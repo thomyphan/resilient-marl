@@ -1,2 +1,1 @@
-# resilient_marl
-Resilient Multi-Agent Reinforcement Learning
+# Resilient Multi-Agent Reinforcement Learning
