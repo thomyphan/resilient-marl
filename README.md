@@ -2,7 +2,7 @@
 
 - Featured algorithms:
     - Randomized Adversarial Training (RAT) [1]
-	- Resilient Adversarial value Decomposition with Adversary Ratios (RADAR) [1]
+	- Resilient Adversarial value Decomposition with Antagonist-Ratios (RADAR) [1]
 
 ## References
 

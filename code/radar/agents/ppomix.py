@@ -17,11 +17,10 @@ class PPOMIXLearner(PPOLearner):
     def value_update(self, minibatch_data, is_adversary):
         batch_size = minibatch_data["states"].size(0)
         self.central_q_learner.zero_actions = torch.zeros(batch_size, dtype=torch.long).unsqueeze(1)
+        nr_agents = self.get_nr_protagonists()
         if not is_adversary:
-            nr_agents = self.get_nr_protagonists()
             returns = minibatch_data["pro_returns"].view(-1, nr_agents)
         else:
-            nr_agents = self.get_nr_adversaries()
             returns = minibatch_data["adv_returns"].view(-1, nr_agents)
         returns = returns.gather(1, self.central_q_learner.zero_actions).squeeze()
         returns /= self.nr_agents
