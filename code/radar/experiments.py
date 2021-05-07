@@ -85,7 +85,7 @@ def run_test_suite(env, nr_test_episodes, controller, params, log_level, is_adve
         if is_adversary:
             test_adversary_ratios = [ratio for ratio in test_adversary_ratios if ratio > 0]
         for adversary_ratio in test_adversary_ratios:
-            if adversary_ratio >= 0 or test_algorithm == algorithm_choice or algorithm_choice in ["A2C", "A2CVDN", "PPO", "PPOMIX", "COMA", "PPOMIX", "A2CMIX", "MADDPG", "M3DDPG"]:
+            if adversary_ratio >= 0 or test_algorithm == algorithm_choice or algorithm_choice in ["IAC", "AC-QMIX", "PPO", "COMA", "PPO-QMIX", "MADDPG", "M3DDPG"]:
                 discounted_return = 0
                 undiscounted_return = 0
                 domain_statistic = 0
