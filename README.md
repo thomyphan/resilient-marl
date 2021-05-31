@@ -6,4 +6,4 @@
 
 ## References
 
-- [1] T. Phan et al., "Resilient Multi-Agent Reinforcement Learning with Adversarial Value Decomposition", in AAAI 2021 (to appear)
+- [1] T. Phan et al., ["Resilient Multi-Agent Reinforcement Learning with Adversarial Value Decomposition"](https://ojs.aaai.org/index.php/AAAI/article/view/17348/17155), in AAAI 2021
